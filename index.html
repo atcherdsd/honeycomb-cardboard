@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Siarhei Charniak">
+    <title>Сотовый картон</title>
+    <link rel="icon" href="./images/fav.ico">
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="header-container">
+        <header>
+            <div class="header-logo">
+                <a href="#">
+                    <img src="./images/logo.png" alt="Логотип">
+                </a>
+                <span>example.com</span>
+            </div>
+            <nav class="links">
+                <ul>
+                    <li><a href="#carton-panels">Сотовые панели</a></li>
+                    <li><a href="#">Стеновые панели</a></li>
+                    <li><a href="#">Упаковка из картона</a></li>
+                    <li><a href="#">О&nbsp;компании</a></li>
+                    <li><a href="#">Контакты</a></li>
+                </ul>
+            </nav>
+            <div class="contacts-wrapper">
+                <div>
+                    <a class="contacts" href="mailto:carton@gmail.com" draggable="false">carton@gmail.com</a>
+                </div>
+                <a class="contacts" href="tel:+375299879898">+375 (29) 9879898</a>
+                <div class="phones">
+                    <a class="contacts" href="viber://chat?number=%2B375299879898"><img class="contacts-photo img" src="./images/viber_tile_logo_icon_170260.svg" alt="Viber" title="Viber"></a> 
+                    <a class="contacts" href="https://wa.me/375299879898"><img class="contacts-photo img" src="./images/WhatsApp_logo-color-vertical.svg" alt="WhatsApp" title="WhatsApp"></a>
+                </div>
+            </div>
+        </header>
+        <div id="carton-panels"></div>
+    </div>
+    <main>
+        <section>
+            <h1>Панели из сотового картона</h1>
+            <div class="columns-2">
+                <div class="columns-2-item">
+                    <img class="product-img" src="./images/image-karton.jpg" alt="Картон">
+                </div>
+                <div class="columns-2-item"> 
+                    <div class="sales-details">
+                        <div class="price">50 руб./лист</div>
+                        <div class="cart-wrapper">
+                            <div class="counter-wrapper">
+                                <div class="counter">1</div>
+                                <button class="counter-control">+</button>
+                                <button class="counter-control">-</button>
+                            </div>
+                            <button class="cart-button">В корзину</button>
+                        </div>
+                        <a href="#contact-data"><button class="buy-button">Купить в 1 клик</button></a>
+                    </div>
+                    <div class="form-wrapper">
+                        <form class="contact-form" id="contact-data" action="mailto:carton@gmail.com" enctype="text/plain" method="post">
+                            <label for="POST-name"></label>
+                            <input id="POST-name" type="text" name="name" placeholder="Ваше имя" autocomplete="given-name">
+                            <label for="POST-phone"></label>
+                            <input id="POST-phone" type="tel" name="phone" placeholder="Ваш телефон" autocomplete="tel">
+                            <input type="submit" value="Задать вопрос" >
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <p class="description">
+                Сотовые панели представляют собой трехслойные изделия, состоящие из одного внутреннего слоя - сотового картонного
+               заполнителя с шестигранной формой ячеек и двух плоских наружных слоев картона, приклеенных к заполнителю с обеих 
+               сторон клеем ПВА. Толщина сотовых плит составляет 100 мм, размеры 1000х1000 мм. 
+            </p>
+        </section>
+    </main>
+</body>
+</html>
