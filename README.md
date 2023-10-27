@@ -1,1 +1,1 @@
-# honeycomb-cardboard
+# Page layout for selling cellular cardboard
