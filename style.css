@@ -46,6 +46,7 @@ header {
 }
 .header-logo img {
     width: 100px;
+    height: 100px;
 }
 .header-logo span {
     display: block;
@@ -77,6 +78,7 @@ header {
 
 .contacts-photo.img {
     width: 30px;
+    height: 30px;
 }
 .links {
     text-align: center;
@@ -154,8 +156,18 @@ h1 {
     height: 70%;
     width: 38%;
 }
-.columns-2-item .product-img {
-    max-height: 680px;
+.product-img {
+    width: 680px;
+    height: 680px;
+    animation: appearance 0.5s ease-in forwards;
+}
+@keyframes appearance {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
 }
 .sales-details {
     display: flex;
@@ -205,7 +217,7 @@ button {
 .cart-button,
 .buy-button {
     font-size: 20px;
-    color: #fff;
+    color: #010c1f;
 }
 .cart-button {
     width: 150px;
@@ -218,14 +230,14 @@ button {
     width: 200px;
     height: 54px;
     justify-self: center;
-    border: 3px solid rgb(238 27 27);
+    border: 3px solid #ff5c5c;
     border-radius: 20px;
-    background-color: rgb(238 27 27);
+    background-color: #ff5c5c;
 }
 .cart-button:hover,
 .buy-button:hover {
     transition: 0.3s;
-    color: #010c1f;
+    color: #085907;
 }
 .cart-button:active,
 .buy-button:active {
@@ -273,11 +285,11 @@ input[type="submit"] {
     max-width: 350px;
     width: 100%;
     background-color: rgb(255 132 42);
-    color: #fff;
+    color: #010c1f;
     cursor: pointer;
 }
 input[type="submit"]:hover {
-    color: #010c1f;
+    color: #085907;
     transition: 0.3s;
 }input[type="submit"]:active {
     color: #fff;
@@ -286,10 +298,13 @@ input[type="submit"]:hover {
     font-size: 18px;
     line-height: 1.5;
     margin: -60px 20px 42px;
+    position: relative;
+    z-index: 1;
 }
 @media (max-width: 1255px) {
     .header-logo img {
         width: 80px;
+        height: 80px;
     }    
     .columns-2-item:last-child {
         width: auto;
@@ -309,5 +324,9 @@ input[type="submit"]:hover {
     }
     nav.links li {
         padding: 10px;
+    }
+    .product-img {
+        width: 400px;
+        height: 400px;
     }
 }
